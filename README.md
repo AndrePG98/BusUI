@@ -1,4 +1,4 @@
-BusUI - Java Bus Simulation App
+# BusUI - Java Bus Simulation App
 
 BusUI Logo
 
