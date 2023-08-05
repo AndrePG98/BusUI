@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<TitledPane fx:id="root" prefHeight="428.0" prefWidth="548.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <content>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="509.0" prefWidth="760.0">
+         <children>
+            <HBox prefHeight="485.0" prefWidth="760.0">
+               <children>
+                  <VBox prefHeight="444.0" prefWidth="706.0">
+                     <children>
+                        <HBox prefHeight="75.0" prefWidth="384.0">
+                           <children>
+                              <VBox prefHeight="100.0" prefWidth="206.0">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="17.0" prefWidth="218.0" text="Origin">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="busOrigin" alignment="CENTER" prefHeight="51.0" prefWidth="183.0">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="100.0" prefWidth="225.0">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="17.0" prefWidth="355.0" text="Destination">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="busDestination" alignment="CENTER" prefHeight="48.0" prefWidth="202.0">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <VBox prefHeight="130.0" prefWidth="384.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="35.0" prefWidth="384.0" text="Speed">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                              <Slider fx:id="speed" prefHeight="29.0" prefWidth="384.0" />
+                              <Label fx:id="speedCounter" alignment="CENTER" prefHeight="17.0" prefWidth="410.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="126.0" prefWidth="384.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="53.0" prefWidth="384.0" text="Chance">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                              <Slider fx:id="chance" prefHeight="32.0" prefWidth="384.0" />
+                              <Label fx:id="chanceCounter" alignment="CENTER" prefHeight="17.0" prefWidth="509.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <Button fx:id="start" mnemonicParsing="false" prefHeight="25.0" prefWidth="122.0" text="Start" />
+                        <Button fx:id="repair" mnemonicParsing="false" prefHeight="25.0" prefWidth="121.0" text="Repair" />
+                        <Label fx:id="currentLocation" alignment="CENTER" prefHeight="17.0" prefWidth="462.0">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="395.0" prefWidth="702.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="17.0" prefWidth="355.0" text="Passenger List">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="10.0" />
+                           </padding>
+                        </Label>
+                        <TableView fx:id="passengerList" prefHeight="407.0" prefWidth="678.0">
+                          <columns>
+                            <TableColumn fx:id="idColumn" prefWidth="41.0" text="ID" />
+                            <TableColumn fx:id="originColumn" prefWidth="157.0" text="Origin" />
+                              <TableColumn fx:id="destinationColumn" prefWidth="167.0" text="Destination" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <Separator prefHeight="112.0" prefWidth="760.0" />
+            <VBox prefHeight="161.0" prefWidth="760.0">
+               <children>
+                  <Label fx:id="status" alignment="CENTER" contentDisplay="CENTER" prefHeight="0.0" prefWidth="760.0">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane prefHeight="43.0" prefWidth="760.0">
+                     <children>
+                        <ProgressBar fx:id="progressBar" layoutX="17.0" layoutY="13.0" prefHeight="18.0" prefWidth="726.0" progress="0.0" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </content>
+</TitledPane>

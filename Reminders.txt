@@ -1,0 +1,1 @@
+link a bus to a custom buscomponent when loading bus.fxml
