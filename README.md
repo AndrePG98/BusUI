@@ -54,7 +54,7 @@ The BusUI application utilizes JavaFX for the graphical user interface.
 
 ## Author
 
-This application is created by [André Gonçalves](https://github.com/PhonyZ0n3) and [Tiago Gonçalves](https://github.com/Tiago-Goncalves98). The purpose of this app is to showcase my understanding of Java programming, multithreading, JavaFX, and object-oriented programming. Feel free to explore the code and use it as a reference for similar projects.
+This application is created by [André Gonçalves](https://github.com/PhonyZ0n3) and [Tiago Gonçalves](https://github.com/Tiago-Goncalves98). The purpose of this app is to showcase our understanding of Java programming, multithreading, and object-oriented programming. Feel free to explore the code and use it as a reference for similar projects.
 
 ## License
 
